@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Human Bingo · Platform &amp; Web Engineering</title>
+<style>
+  :root{
+    --bg:#060914; --accent:#3d6bff; --accent-2:#6f93ff;
+    --text:#eef2ff; --muted:#8a96b8; --line:rgba(255,255,255,.10); --card:rgba(255,255,255,.04);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+    color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;
+    background:
+      radial-gradient(1200px 700px at 78% -8%, rgba(61,107,255,.30), transparent 60%),
+      radial-gradient(900px 600px at 12% 108%, rgba(29,58,143,.30), transparent 60%),
+      linear-gradient(160deg, #070b1c 0%, #060914 45%, #04060f 100%);
+    background-attachment:fixed;-webkit-font-smoothing:antialiased;padding:24px;
+  }
+  .wrap{max-width:680px;width:100%;text-align:center;}
+  h1{font-size:clamp(28px,6vw,44px);font-weight:700;margin:0 0 12px;letter-spacing:-.02em;}
+  p{color:var(--muted);font-size:17px;margin:0 0 36px;}
+  .cards{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
+  a.card{
+    display:block;text-decoration:none;color:inherit;padding:26px 24px;border-radius:16px;
+    background:var(--card);border:1px solid var(--line);transition:transform .15s ease,border-color .15s ease;
+  }
+  a.card:hover{transform:translateY(-3px);border-color:var(--accent-2);}
+  a.card h2{margin:0 0 8px;font-size:19px;font-weight:600;}
+  a.card span{color:var(--muted);font-size:14px;}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Human Bingo</h1>
+    <p>Platform &amp; Web Engineering — choose a board</p>
+    <div class="cards">
+      <a class="card" href="bingo-web_for_interns.html">
+        <h2>Platform &amp; Web Engineering</h2>
+        <span>The web engineering board →</span>
+      </a>
+      <a class="card" href="bingo-archives_for_interns.html">
+        <h2>Archives, Research &amp; Culture</h2>
+        <span>The archives board →</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
